@@ -28,11 +28,11 @@ config system interface
         set mode static
         set ip 10.1.1.220 255.255.255.0
         set allowaccess ping https ssh
-    end
+    end```
 
 ### 2.4 Set Default Gateway
 
-```bash
+
 config router static
     edit 1
         set device port1
