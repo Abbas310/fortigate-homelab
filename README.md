@@ -22,8 +22,8 @@ The final setup provides a secure gateway for a Windows 10 client, routing traff
 | **Host PC (Windows 11)** | Physical NIC | 10.1.1.218 | 255.255.255.0 |
 | **Home Router** | Gateway | 10.1.1.1 | 255.255.255.0 |
 | **FortiGate port1 (WAN)** | Bridged (VMnet0) | 10.1.1.220 | 255.255.255.0 |
-| **FortiGate port2 (LAN)** | Host‑only (VMnet2) | 192.168.1.1 | 255.255.255.0 |
-| **Windows 10 Client** | Host‑only (VMnet2) | DHCP (192.168.1.100-200) | 255.255.255.0 |
+| **FortiGate port2 (LAN)** | Host‑only (VMnet1) | 192.168.1.1 | 255.255.255.0 |
+| **Windows 10 Client** | Host‑only (VMnet1) | DHCP (192.168.1.100-200) | 255.255.255.0 |
 
 ## 🛠️ Technologies Used
 
