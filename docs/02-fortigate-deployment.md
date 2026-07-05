@@ -22,7 +22,7 @@ Deploy the FortiGate VM from the OVF/OVA template and perform initial boot confi
 
 Assign a static IP to `port1` (the WAN/management interface). Replace `10.1.1.220` with your own IP if needed.
 
-```bash
+
 config system interface
     edit port1
         set mode static
@@ -40,17 +40,18 @@ config router static
     next
 end
 
+
 ### 2.5 Set DNS Servers
 
-```bash
 config system dns
     set primary 8.8.8.8
     set secondary 8.8.4.4
 end
 
+
 ### 2.6 Verify Connectivity
 
-```bash
+
 execute ping 10.1.1.1
 execute ping 8.8.8.8
 Both should succeed. If not, check your VMware bridging settings and physical adapter binding.
