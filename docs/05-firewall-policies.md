@@ -4,7 +4,7 @@
 Allow the Windows 10 client to access the internet through the FortiGate.
 
 ## Steps
-
+### 5.1 Create the Policy
 1. In the GUI, go to **Policy & Objects > Firewall Policy**.
 2. Click **Create New**.
 3. Fill in:
@@ -19,7 +19,7 @@ Allow the Windows 10 client to access the internet through the FortiGate.
 4. Under the **NAT** tab, check **Use Outbound Interface Address**.
 5. Click **OK**.
 
-## Verification
+### 5.2 Verification
 
 - On the Windows 10 VM, open a browser and try to visit any website.
 - It should work.
