@@ -39,25 +39,25 @@ The final setup provides a secure gateway for a Windows 10 client, routing traff
 - Gained hands‑on experience with FortiOS CLI and GUI, covering interface configuration, DHCP, and firewall policies.
 
 ## 📂 Repository Structure
-fortigate-homelab/
-├── README.md
-├── docs/
-│ ├── 01-vmware-setup.md
-│ ├── 02-fortigate-deployment.md
-│ ├── 03-licensing.md
-│ ├── 04-network-config.md
-│ ├── 05-firewall-policies.md
-│ ├── 06-troubleshooting.md
-│ └── images/
-│ ├── network-topology.png
-│ ├── vmware-network-editor.png
-│ ├── fortigate-dashboard.png
-│ ├── fortigate-ping.png
-│ ├── fortigate-port2-dhcp.png
-│ ├── fortigate-firewall-policy.png
-│ └── windows-ipconfig.png
-└── scripts/
-└── initial-config.md
+graph TD
+    A[fortigate-homelab] --> B[README.md]
+    A --> C[docs/]
+    C --> D[01-vmware-setup.md]
+    C --> E[02-fortigate-deployment.md]
+    C --> F[03-licensing.md]
+    C --> G[04-network-config.md]
+    C --> H[05-firewall-policies.md]
+    C --> I[06-troubleshooting.md]
+    C --> J[images/]
+    J --> K[network-topology.png]
+    J --> L[vmware-network-editor.png]
+    J --> M[fortigate-dashboard.png]
+    J --> N[fortigate-ping.png]
+    J --> O[fortigate-port2-dhcp.png]
+    J --> P[fortigate-firewall-policy.png]
+    J --> Q[windows-ipconfig.png]
+    A --> R[scripts/]
+    R --> S[initial-config.md]
 
 
 ## 📚 Documentation
