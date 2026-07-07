@@ -39,6 +39,7 @@ The final setup provides a secure gateway for a Windows 10 client, routing traff
 - Gained hands‑on experience with FortiOS CLI and GUI, covering interface configuration, DHCP, and firewall policies.
 
 ## 📂 Repository Structure
+```mermaid
 graph TD
     A[fortigate-homelab] --> B[README.md]
     A --> C[docs/]
@@ -58,6 +59,7 @@ graph TD
     J --> Q[windows-ipconfig.png]
     A --> R[scripts/]
     R --> S[initial-config.md]
+```
 
 
 ## 📚 Documentation
