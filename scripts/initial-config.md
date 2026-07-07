@@ -7,8 +7,9 @@ This document contains all the CLI commands used to configure the FortiGate VM d
 
 Run these commands in order after first login:
 
-```bash
+
 # 1. Set timezone (replace with yours)
+```bash
 config system global
     set timezone America/New_York
 end
