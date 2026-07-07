@@ -57,4 +57,4 @@ execute ping 8.8.8.8
 ```
 Both should succeed. If not, check your VMware bridging settings and physical adapter binding.
 
-https://images/fortigate-ping.png
+![Fortigate CLI Ping](images/fortigate-ping.png)
