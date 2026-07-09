@@ -21,8 +21,8 @@ The final setup provides a secure gateway for a Windows 10 client, routing traff
 | **Host PC (Windows 11)** | Physical NIC | 10.1.1.218 | 255.255.255.0 |
 | **Home Router** | Gateway | 10.1.1.1 | 255.255.255.0 |
 | **FortiGate port1 (WAN)** | Bridged (VMnet0) | 10.1.1.220 | 255.255.255.0 |
-| **FortiGate port2 (LAN)** | Host‑only (VMnet2) | 192.168.1.1 | 255.255.255.0 |
-| **Windows 10 Client** | Host‑only (VMnet2) | DHCP (192.168.1.100-200) | 255.255.255.0 |
+| **FortiGate port2 (LAN)** | Host‑only (VMnet1) | 192.168.1.1 | 255.255.255.0 |
+| **Windows 10 Client** | Host‑only (VMnet1) | DHCP (192.168.1.100-200) | 255.255.255.0 |
 
 ## 🛠️ Technologies Used
 
@@ -85,8 +85,8 @@ For detailed step‑by‑step guides, see the [`docs/`](docs/) folder:
 2. Go to **Edit > Virtual Network Editor**.
 3. Click **"Change Settings"** (requires admin rights).
 4. Select **VMnet0** (Bridged) and set it to **"Bridged to:"** your active physical adapter (Wi‑Fi or Ethernet) – **do not leave it on "Automatic"**.
-5. Click **Add Network...**, select **VMnet2**, and set it to **Host‑only**.
-6. For VMnet2, **uncheck "Use local DHCP service"** – we will let the FortiGate handle DHCP.
+5. Click **Add Network...**, select **VMnet1**, and set it to **Host‑only**.
+6. For VMnet1, **uncheck "Use local DHCP service"** – we will let the FortiGate handle DHCP.
 7. Click **Apply** and **OK**.
 
 ### 1.2 VM Hardware Settings
@@ -95,10 +95,10 @@ For detailed step‑by‑step guides, see the [`docs/`](docs/) folder:
 - **CPU:** 1 vCPU
 - **Memory:** 2048 MB (2 GB)
 - **Network Adapter 1:** Bridged (VMnet0) → this becomes `port1` (WAN)
-- **Network Adapter 2:** Custom (VMnet2) → this becomes `port2` (LAN)
+- **Network Adapter 2:** Custom (VMnet1) → this becomes `port2` (LAN)
 
 **Windows 10 VM:**
-- **Network Adapter:** Custom (VMnet2) → connects to the LAN side.
+- **Network Adapter:** Custom (VMnet1) → connects to the LAN side.
 
 > **Important:** The free permanent license requires exactly **1 vCPU** and **2 GB RAM** – no more, no less. If you allocate more, the license validation will fail.
 
